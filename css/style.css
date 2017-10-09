@@ -1,0 +1,51 @@
+.addEmployee {
+	width: 100%;
+}
+.form-control {
+	margin: 10px 0;
+}
+.col-form-label {
+	margin: 10px 0;
+}
+.statistic {
+	margin: 30px auto;
+}
+.statistic p, .statistic label {
+	margin: 3px;
+}
+#maxEmp {
+	font-size: 1rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    width: 60px;
+}
+.list-group li{
+    display: flex;
+    justify-content:space-around;
+}
+.color {
+	background-color: #0275d8;
+	color: #fff;
+}
+.list {
+	margin: 10px 0;
+	position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: .5rem 1rem;
+    line-height: 1.25;
+    margin-bottom: -1px;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+.fa-window-close {
+	cursor: pointer;
+}
+.fa-window-close:hover {
+	transform: scale(1.5);
+	transition: all 0.3s ease;
+}

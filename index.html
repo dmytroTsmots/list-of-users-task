@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>List of users</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section>
+    <div class="container">
+      <h1 class="text-center">List of employees on the factory</h1>
+      <div class="text-center statistic">
+        <div>
+          <label for="maxEmp">Set limit of Employee:
+          </label>
+          <input type="number" name="maxEmployee" max="50" value="10" id="maxEmp" required> 
+        </div>  
+          <p>Average salary: $
+            <span id="averageSalary">1000</span>
+          </p>
+          <p>Numbers of employee: 
+            <span id="currentlyEmp">1</span>
+          </p>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="form-group">
+            <input type="text" name="first-name" class="form-control" placeholder="Enter First Name">
+            <input type="text" name="last-name" class="form-control" placeholder="Enter Last Name" required>
+            <input type="text" name="salary" class="form-control"
+            placeholder="Enter Salary" required>
+            <input type="text" name="position" class="form-control"
+            placeholder="Enter Position" required>
+            <button class="addEmployee btn btn-primary" onclick="addEmployee()">Add New employee</button>
+          </div>   
+        </div>
+        <div class="col-sm-8">
+          <ul class="list-group">
+            <li class="list color">
+             <span>John</span>
+             <span>Doe</span>
+             <span>$ 1000</span>
+             <span>Manager</span>
+             <span>Delete</span>
+            </li>
+          </ul>
+          <ul class="list-group employeeList">
+           <li class="list">
+             <span class="employeeFirstName">John</span>
+             <span class="employeeLastName">Doe</span>
+             <span class="employeeSalary">$ 1000</span>
+             <span class="employeePosition">Manager</span>
+             <span class="employeeDelete"><i class="fa fa-window-close" aria-hidden="true"></i></span>
+           </li>
+          </ul>
+        </div>
+      </div>  
+    </div>
+  </section>
+ <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
