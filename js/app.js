@@ -20,7 +20,7 @@ addEmployee.addEventListener('click', function() {
         alert('Limit set to $2000, you cann`t hired more');
         return false;
     }
-    if (firstName == '' || lastName == '' || position == '') {
+    if (firstName == '' || lastName == '' || position == '' || salary == '') {
         alert('You should fill all empty fields');
         return false;
     }
@@ -29,6 +29,9 @@ addEmployee.addEventListener('click', function() {
         return false;
     } else if (salary <= 0) {
         alert('You should enter positive value of a salary');
+        return false;
+    } else if (salary.match('e') || salary.match(' ')) {
+        alert('You should enter a number without exponent or spaces');
         return false;
     }
     if (checkDuplicates(firstName, lastName)) {
